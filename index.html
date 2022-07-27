@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Me in emoji</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<header>
+    <div id="banner">
+        <img src="img/emojilogo.png">
+    </div>
+</header>
+
+<body>
+    <div id="container">
+        <div id="info-section">
+            <label> Name: <input id="name-el" type="text" placeholder="Enter your name" class="info-input"></label>
+
+            <label>Age: <input id="age-el" type="number" placeholder="Enter your age" class="info-input"></label>
+
+            <div id="genre-section">
+                <input type="radio" id="girl" value="girl" name="genre">Female</input>
+                <input type="radio" id="boy" value="boy" name="genre">Male</input>
+            </div>
+
+            <label for="animal">Chosee your favorite animal
+                <select id="animal-el" name="animal" class="select-list">
+                <option value="bear">Bear</option>
+                <option value="lion">Lion</option>
+                <option value="penguin">Penguin</option>
+                <option value="monkey">Monkey</option>
+                <option value="chicken">Chicken</option>
+                <option value="dog">Dog</option>
+                <option value="octupus">Octupus</option>
+            </select></label>
+
+
+            <label for="emotion-el">Choose your current emotion
+                <select id="emotion-el" name="emotion" class="select-list">
+                <option value="happy">Happy</option>
+                <option value="lion">Sad</option>
+                <option value="worry">Worry</option>
+                <option value="angry">Angry</option>
+                <option valure="inlove">In love</option>
+            </select></label>
+
+
+            <label for="food-el">Choose your favorite food
+                <select id="food-el" name="food" class="select-list">
+                <option value="pizza">Pizza</option>
+                <option value="taco">Tacos</option>
+                <option value="burger">Hamburger</option>
+                <option value="pasta">Pasta</option>
+                <option valure="sushi">Sushi</option>
+            </select></label>
+
+            <label for="color-el">Choose a color
+                <select id="color-el" name="color" class="select-list">
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option valure="purple">Purple</option>
+                <option valure="pink">Pink</option>
+            </select>r</label>
+
+
+            <button id="generate-btn">Generate card</button>
+
+        </div>
+
+        <div id="diver"></div>
+
+        <div id="text-section">
+            <p>This is you in <span id="emoji-text">emojis</span></p>
+            <div id="card-section">
+                <div id="person-name">
+                    <div id="person-info">
+                        <h1 id="person"></h1>
+                    </div>
+                    <p id="name"></p>
+                </div>
+
+                <div id="text-info">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+
+
+</html>
